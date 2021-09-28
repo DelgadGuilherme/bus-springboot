@@ -1,0 +1,23 @@
+GET http://localhost:8080/rota/1/favoritar?usuario_id=1
+Accept: application/json
+
+###
+GET http://localhost:8080/rota/horario/1
+Accept: application/json
+
+###
+GET http://localhost:8080/rota/1
+Accept: application/json
+
+###
+POST http://localhost:8080/rota
+Content-Type: application/json
+
+{
+  "id": 1,
+  "horario_saida_terminal": "14:30:00",
+  "horario_chegada_terminal": "14:00:00",
+  "id_ponto": 3
+}
+
+###

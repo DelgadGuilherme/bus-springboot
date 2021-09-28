@@ -1,0 +1,13 @@
+POST http://localhost:8080/ponto
+Content-Type: application/json
+
+{
+  "id" : 3,
+  "localizacao" : "Localizacao do ponto de id 3"
+}
+
+###
+GET http://localhost:8080/ponto/localizacao/3
+Accept: application/json
+
+###

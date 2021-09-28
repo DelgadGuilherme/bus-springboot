@@ -1,0 +1,13 @@
+POST http://localhost:8080/usuario
+Content-Type: application/json
+
+{
+  "id": 1,
+  "nome": "Joao",
+  "email": "email do joão",
+  "telefone": "929292992",
+  "cpf": "123456789",
+  "endereco_id": 1
+}
+
+###
