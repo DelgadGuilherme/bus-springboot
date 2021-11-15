@@ -18,6 +18,7 @@ public class UsuarioController {
 
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping
+    @CrossOrigin(origins = "http://localhost:3000")
     public Usuario inserir(@RequestBody Usuario usuario) throws Exception {
         return usuarioRepository.inserir(usuario);
     }

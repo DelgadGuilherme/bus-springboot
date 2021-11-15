@@ -35,4 +35,10 @@ public class PontoRepository {
 
         return ponto.getLocalizacao();
     }
+
+    public List<Ponto> retornarTodos() {
+        String sql = "select * from ponto";
+
+        return jdbcTemplate.query(sql, new PontoMapper());
+    }
 }

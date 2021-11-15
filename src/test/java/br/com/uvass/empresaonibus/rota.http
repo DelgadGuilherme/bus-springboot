@@ -14,10 +14,14 @@ POST http://localhost:8080/rota
 Content-Type: application/json
 
 {
-  "id": 1,
+  "id": 2,
   "horario_saida_terminal": "14:30:00",
   "horario_chegada_terminal": "14:00:00",
   "id_ponto": 3
 }
 
 ###
+
+GET http://localhost:8080/rota
+Accept: application/json
+

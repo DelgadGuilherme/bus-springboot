@@ -16,6 +16,12 @@ public class RotaRepository {
         this.jdbcTemplate = jdbcTemplate;
     }
 
+    public List<Rota> buscarTodos() {
+        String sql = "select * from rota";
+
+        return jdbcTemplate.query(sql, new RotaMapper());
+    }
+
     public Rota buscar(int id){
         String sql = "select * from rota where id = ?";
 
